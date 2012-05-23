@@ -1,0 +1,63 @@
+/*
+============================================================================
+ Name		: SymbianDemo1.mmp
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for SymbianDemo1.
+============================================================================
+*/
+APP_LAYER_SYSTEMINCLUDE
+
+
+TARGET			SymbianDemo1_0xe68a9f1f.exe
+TARGETTYPE		exe
+UID		  0x100039CE 0xe68a9f1f
+
+SOURCEPATH		..\src
+SOURCE			SymbianDemo1.cpp
+SOURCE			SymbianDemo1Application.cpp
+SOURCE			SymbianDemo1AppView.cpp
+SOURCE			SymbianDemo1AppUi.cpp
+SOURCE			SymbianDemo1Document.cpp
+
+SOURCEPATH		..\data
+
+START RESOURCE	SymbianDemo1.rss
+HEADER
+TARGET SymbianDemo1_0xe68a9f1f
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	SymbianDemo1_reg.rss
+TARGET SymbianDemo1_0xe68a9f1f_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+USERINCLUDE	   ..\inc
+USERINCLUDE    ..\help
+
+
+
+LIBRARY		   euser.lib
+LIBRARY		   apparc.lib
+LIBRARY		   cone.lib
+LIBRARY		   eikcore.lib
+LIBRARY		   avkon.lib
+LIBRARY		   commonengine.lib
+LIBRARY		   efsrv.lib 
+LIBRARY		   estor.lib
+LIBRARY        aknnotify.lib
+LIBRARY        hlplch.lib
+LIBRARY        charconv.lib
+LIBRARY        ApiDll.lib
+LIBRARY        bafl.lib
+ 
+
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xe68a9f1f
+CAPABILITY	  	  ReadUserData NetworkServices
+
+DEBUGGABLE_UDEBONLY
+// End of File

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE cshproj SYSTEM "/epoc32/tools/cshlpcmp/dtd/cshproj.dtd">
+<?xml:stylesheet href="/epoc32/tools/cshlpcmp/xsl/CSHproj.xsl" title="CS-Help project" type="text/xsl"?>
+<cshproj>
+<helpfileUID>0xe68a9f1f</helpfileUID>
+<directories>
+	<input></input>
+	<output></output>
+	<graphics></graphics>
+	<working>temp\</working>
+</directories>
+<files>
+	<source>
+	<xmlfile>SymbianDemo1.xml</xmlfile>
+	</source>
+	<destination>SymbianDemo1_0xe68a9f1f.hlp</destination>
+	<customization>custom.xml</customization>
+	</files>
+</cshproj>

@@ -1,0 +1,40 @@
+; Installation file for SymbianDemo1 application
+;
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: $(EPOCROOT), $(PLATFORM), $(TARGET)
+;
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"SymbianDemo1"},(0xe68a9f1f),1,0,3
+
+;Localised Vendor name
+%{"Vendor-EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+;Supports Series 60 v 5.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+;Supports Symbian^3
+[0x20022E6D], 0, 0, 0, {"Series60ProductID"}
+
+;Files to install
+;You should change the source paths to match that of your environment
+;<source> <destination>
+"$(EPOCROOT)epoc32\release\$(PLATFORM)\$(TARGET)\SymbianDemo1_0xe68a9f1f.exe"		-"!:\sys\bin\SymbianDemo1_0xe68a9f1f.exe"
+"$(EPOCROOT)epoc32\data\z\resource\apps\symbiandemo1_0xe68a9f1f.rsc"		-"!:\resource\apps\SymbianDemo1_0xe68a9f1f.rsc"
+"$(EPOCROOT)epoc32\data\z\private\10003a3f\apps\symbiandemo1_0xe68a9f1f_reg.rsc"	-"!:\private\10003a3f\import\apps\SymbianDemo1_0xe68a9f1f_reg.rsc"
+"$(EPOCROOT)epoc32\data\z\resource\apps\symbiandemo1_0xe68a9f1f.mif" -"!:\resource\apps\SymbianDemo1_0xe68a9f1f.mif"
+;"..\help\symbiandemo1_0xe68a9f1f.hlp"							 -"!:\resource\help\SymbianDemo1_0xe68a9f1f.hlp"
+
+; Add any installation notes if applicable
+;"SymbianDemo1.txt"		-"!:\private\e68a9f1f\SymbianDemo1.txt"
+
+;required for application to be covered by backup/restore facility 
+"..\sis\backup_registration.xml"		-"!:\private\e68a9f1f\backup_registration.xml"

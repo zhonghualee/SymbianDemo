@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name		: SymbianDemo1.hrh
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This file contains declarations for constants of SymbianDemo1.
+ The file can be included in C++ or resource file.
+ ============================================================================
+ */
+#ifndef __SYMBIANDEMO1_HRH__
+#define __SYMBIANDEMO1_HRH__
+
+#define _UID3 0xe68a9f1f
+
+// SymbianDemo1 enumerate command codes
+enum TSymbianDemo1Ids
+	{
+	ECommand1 = 0x6001, // start value must not be 0
+	ECommand2,
+	EHelp,
+	EAbout
+	};
+
+#endif // __SYMBIANDEMO1_HRH__
